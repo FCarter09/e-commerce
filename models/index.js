@@ -22,8 +22,7 @@ Product.belongsToMany(Tag, {
   through: {
     model: ProductTag  //ProductTag has a fk for both product and tag models
   },
-  //define an alias for when data is retrieved
-  as: 'related_products'
+  as: 'related_products' //define an alias for when data is retrieved
 });
 
 // // Tags belongToMany Products (through ProductTag)
@@ -32,8 +31,7 @@ Tag.belongsToMany(Product, {
   through: {
     model: ProductTag  //ProductTag has a fk for both product and tag models
   },
-  //define an alias for when data is retrieved
-  as: 'related_products'
+  as: 'related_products' //define an alias for when data is retrieved
 });
 
 // Product.belongsToMany(Tag, {
